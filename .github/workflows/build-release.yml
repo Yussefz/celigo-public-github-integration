@@ -17,7 +17,7 @@ jobs:
         run: |
           TIMESTAMP=$(date +"%m%d%Y%H%M")
           ZIP_NAME="deploy-${TIMESTAMP}.zip"
-          cd snapshot
+          cd integration-package
           zip -r ../$ZIP_NAME ./*
           cd ..
           echo "ZIP_NAME=${ZIP_NAME}" >> $GITHUB_ENV
