@@ -4,7 +4,7 @@ on:
   repository_dispatch:
     types: [continuous-integration-event]
 jobs:
-  process-snapshot:
+  continuous-integration:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
