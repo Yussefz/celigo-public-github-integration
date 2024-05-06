@@ -44,7 +44,7 @@ jobs:
         git add .
         git commit -m "Update snapshot with new changes"
         echo "Setting remote URL with PAT..."
-        git remote set-url origin https://x-access-token:${REPO_ACCESS_TOKEN}@github.com/yussefz/celigo-public-github-integration.git
+        git remote set-url origin https://x-access-token:${REPO_ACCESS_TOKEN}@github.com/Yussefz/celigo-public-github-integration.git
         echo "Attempting to push to the repository..."
         git push --set-upstream origin new-branch-${{ github.event.client_payload.id }}  
         
