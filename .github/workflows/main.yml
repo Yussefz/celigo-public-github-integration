@@ -1,8 +1,8 @@
-name: S3 Snapshot Workflow
+name: continuous integration Workflow
 
 on:
   repository_dispatch:
-    types: [snapshot-event]
+    types: [continuous-integration-event]
 jobs:
   process-snapshot:
     runs-on: ubuntu-latest
