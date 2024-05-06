@@ -10,7 +10,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Download Snapshot from S3
+    - name: Download Snapshot from S3 signedURL
       run: |
         curl -o snapshot.zip '${{ github.event.client_payload.signedURL }}'
 
