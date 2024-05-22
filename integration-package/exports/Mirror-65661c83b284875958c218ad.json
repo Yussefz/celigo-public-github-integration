@@ -12,6 +12,7 @@
     "requestMediaType": "json",
     "successMediaType": "json",
     "errorMediaType": "json",
+    "isRest": false,
     "formType": "rest",
     "response": {
       "twoDArray": {
