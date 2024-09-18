@@ -8,7 +8,8 @@
     "formType": "assistant",
     "mediaType": "json",
     "baseURI": "https://api.integrator.io",
-    "concurrencyLevel": 25,
+    "concurrencyLevel": 10,
+    "targetConcurrencyLevel": 10,
     "ping": {
       "relativeURI": "/v1/connections",
       "method": "GET"
@@ -31,24 +32,25 @@
     }
   },
   "rest": {
-    "isHTTPProxy": true,
     "tokenLocation": "header",
     "mediaType": "json",
     "authType": "token",
     "authHeader": "Authorization",
     "authScheme": "Bearer",
-    "headers": [],
+    "headers": [
+      {
+        "name": "content-type",
+        "value": "application/json"
+      }
+    ],
     "encryptedFields": [],
     "unencryptedFields": [],
     "scope": [],
     "pingRelativeURI": "/v1/connections",
-    "pingSuccessValues": [],
-    "pingFailureValues": [],
     "pingMethod": "GET",
-    "concurrencyLevel": 5,
-    "targetConcurrencyLevel": 5,
+    "concurrencyLevel": 10,
+    "targetConcurrencyLevel": 10,
     "refreshTokenMethod": "POST",
-    "refreshTokenMediaType": "urlencoded",
-    "refreshTokenHeaders": []
+    "refreshTokenMediaType": "urlencoded"
   }
 }
