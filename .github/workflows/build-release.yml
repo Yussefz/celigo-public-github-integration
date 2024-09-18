@@ -11,10 +11,10 @@ jobs:
   prepare:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       
       - name: Zip Deploy Folder and Upload as Artifact 
-        run: |
+        run: 
           TIMESTAMP=$(date +"%m%d%Y%H%M")
           ZIP_NAME="deploy-${TIMESTAMP}.zip"
           cd integration-package
@@ -22,7 +22,7 @@ jobs:
           cd ..
           echo "ZIP_NAME=${ZIP_NAME}" >> $GITHUB_ENV
           
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: deploy-package
           path: ${{ env.ZIP_NAME }}
@@ -31,15 +31,15 @@ jobs:
     needs: prepare
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       
       - name: Download Artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: deploy-package
           
       - name: Create Release and Upload Asset
-        run: |
+        run: 
           set -e
           TIMESTAMP=$(date +"%Y%m%d%H%M%S")
           TAG_NAME="${{ github.ref_name }}-$TIMESTAMP"
