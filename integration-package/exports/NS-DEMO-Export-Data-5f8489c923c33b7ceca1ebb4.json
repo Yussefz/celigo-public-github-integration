@@ -1,7 +1,7 @@
 {
   "_id": "5f8489c923c33b7ceca1ebb4",
   "name": "NS - DEMO - Export Data",
-  "_connectionId": "5c9e3fcab6c32736c8eaf713",
+  "_connectionId": "626c245268e40e1032975cfe",
   "apiIdentifier": "e0e03a1389",
   "asynchronous": true,
   "type": "test",
