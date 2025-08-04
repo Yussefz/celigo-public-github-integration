@@ -1,0 +1,15 @@
+{
+  "_id": "5c9e57a70138bb22695ce8a6",
+  "type": "salesforce",
+  "name": "Salesforce - Celigo Labs - e8a6",
+  "salesforce": {
+    "sandbox": false,
+    "scope": [],
+    "concurrencyLevel": 5
+  },
+  "microServices": {
+    "disableRdbms": false,
+    "disableFile": false,
+    "disableNsFile": false
+  }
+}
