@@ -1,0 +1,14 @@
+{
+  "_id": "5e8e173bb2430a08d886a600",
+  "type": "s3",
+  "name": "Amazon S3 - Celigo Labs",
+  "s3": {
+    "concurrencyLevel": 1,
+    "targetConcurrencyLevel": 1
+  },
+  "microServices": {
+    "disableRdbms": false,
+    "disableFile": false,
+    "disableNsFile": false
+  }
+}
