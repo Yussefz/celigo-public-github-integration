@@ -1,0 +1,14 @@
+{
+  "_id": "626c245268e40e1032975cfe",
+  "type": "netsuite",
+  "name": "NetSuite - Celigo Labs (3985)",
+  "netsuite": {
+    "wsdlVersion": "2023.1",
+    "concurrencyLevel": 10
+  },
+  "microServices": {
+    "disableRdbms": false,
+    "disableFile": false,
+    "disableNsFile": false
+  }
+}
