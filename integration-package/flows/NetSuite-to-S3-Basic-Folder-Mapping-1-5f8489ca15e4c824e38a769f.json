@@ -1,6 +1,6 @@
 {
   "_id": "5f8489ca15e4c824e38a769f",
-  "name": "NetSuite to S3 (Basic Folder Mapping)",
+  "name": "NetSuite to S3 (Basic Folder Mapping) - 1",
   "schedule": "? 10 */1 ? * *",
   "pageGenerators": [
     {
